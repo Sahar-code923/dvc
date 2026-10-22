@@ -1,0 +1,5 @@
+outs:
+- md5: 3b1ac1f7b3d20218272ea71af615d7ae
+  size: 3145738
+  hash: md5
+  path: houses.csv
