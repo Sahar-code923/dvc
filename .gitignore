@@ -1,5 +1,8 @@
-mlruns/ 
-mlflow.db 
-model.pkl 
+mlruns/
+mlflow.db
+model.pkl
+champion.pkl
+metrics.json
 __pycache__/
-/houses.csv
+houses.csv
+.pytest_cache/

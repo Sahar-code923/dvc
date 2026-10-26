@@ -1,5 +1,6 @@
 # Step 1: Import the required libraries
 import sys
+import json
 import pandas as pd
 import joblib
 import mlflow
@@ -74,6 +75,10 @@ with mlflow.start_run():
 
     # Log the MAE metric in MLflow
     mlflow.log_metric("mae", mae)
+
+    # Save the score to a file so the CI quality gate can read it
+    with open("metrics.json", "w") as f:
+        json.dump({"mae": mae}, f)
 
     # Print the test results
     print("\nModel Type:", model_type)
