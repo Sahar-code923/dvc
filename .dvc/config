@@ -3,5 +3,4 @@
     remote = storage
 ['remote "storage"']
     url = s3://saaharr-s3-demo-bucket/dvc
-    profile = dvc
     region = us-east-1
